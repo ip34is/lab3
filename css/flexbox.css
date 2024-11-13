@@ -148,6 +148,10 @@ button:active{
   #block_1, #block_2, #block_3, #block_4 {
     width: 100%;
   }
+
+  body{
+    font-size: 3vw;
+  }
 }
 
 /* Мобільні пристрої (менше 768px) */
