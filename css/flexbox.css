@@ -1,0 +1,194 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  font-size: 1vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+h3 {
+  font-size: 0.9em;
+}
+
+a {
+  text-decoration: none;
+  font-size: 1.2em;
+  padding-right: 2%;
+}
+
+input {
+  text-align: center;
+}
+
+header, footer {
+  background: #7397fa;
+  height: 15vh;
+  width: 100%;
+  font-size: 1.2em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header nav {
+  display: flex;
+  order: 2;
+  width: 35%;
+}
+
+header nav ul {
+  list-style: none;
+  width: 100%;
+}
+
+header nav ul li {
+  display: inline;
+}
+
+ul li, ol li {
+  list-style-position: inside;
+}
+
+.buttons:hover {
+  color: #f0fc03;
+  text-decoration: underline;
+}
+
+button{
+  padding: 15px 30px;
+  margin: 10px;
+  color:white;
+  background: #2980b9;
+  border:none;
+  border-radius: 8px;
+  font-size: 18px;
+  cursor: pointer;
+  box-shadow: 0 8px #2980b9;
+}
+
+button:active{
+  transform: rotateY(8px);
+  box-shadow: 0 0;
+}
+
+#block_1, #block_2, #block_3, #block_4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 1.2em;
+}
+
+#block_1 {
+  background: peachpuff;
+  width: 20%;
+  height: 60vh;
+}
+
+#block_2 {
+  background: white;
+  width: 50%;
+  height: 60vh;
+}
+
+#block_3 {
+  background: peachpuff;
+  width: 20%;
+  height: 60vh;
+  text-align: center;
+}
+
+#block_4 {
+  background: lightgreen;
+  width: 100%;
+  height: 10vh;
+}
+
+#block_x, #block_y {
+  background: white;
+  display: inline-flex;
+  height: auto;
+  width: auto;
+  border: 2px solid;
+  margin: 1%;
+  line-height: normal;
+}
+
+#block_x {
+  justify-content: flex-start;
+}
+
+#block_y {
+  justify-content: flex-start;
+}
+
+.text_block_2_contacts {
+  text-align: center;
+  margin: 1%;
+  font-size: 1.2em;
+  text-decoration: none;
+}
+
+#block_1 ul, #block_1 h3, #block_1 ol, #block_3 h3, #block_4 ul li, #block_4_h3 {
+  margin: 0.5%;
+  font-size: 1.2em;
+}
+
+#block_1_ul_contacts, #block_4_ul_index, #block_3_ol_faq {
+  list-style-position: inside;
+}
+
+/* Планшети (від 768px до 1024px) */
+@media (max-width: 1024px) and (min-width: 768px) {
+  #block_1, #block_2, #block_3, #block_4 {
+    width: 100%;
+  }
+}
+
+/* Мобільні пристрої (менше 768px) */
+@media (max-width: 767px) {
+  body {
+    font-size: 2.5vw;
+  }
+
+  header, footer {
+    height: 8vh;
+    line-height: 8vh;
+    font-size: 1em;
+  }
+
+  #block_1, #block_2, #block_3, #block_4 {
+    width: 100%;
+    height: auto;
+    margin: 1% 0;
+  }
+
+  #block_x, #block_y {
+    width: 45%;
+    margin: 1% auto;
+  }
+}
+
+/* Дуже маленькі екрани (менше 480px) */
+@media (max-width: 480px) {
+  h3 {
+    font-size: 1em;
+  }
+
+  body {
+    font-size: 10vw;
+  }
+
+  a {
+    font-size: 1em;
+  }
+
+  #block_x, #block_y {
+    width: 100%;
+  }
+}

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ua">
+  <head>
+    <meta charset="utf-8">
+    <title>Контакти</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+      }
+
+      body {
+        width: 100%;
+        font-size: 16px;
+        text-align: center;
+      }
+
+      table {
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+        border-collapse: collapse;
+      }
+
+      td, th {
+        padding: 10px;
+      }
+
+      .header, .footer {
+        background: #7397fa;
+        color: #ffffff;
+        font-size: 18px;
+        text-align: center;
+      }
+
+      .content td {
+        vertical-align: top;
+        border: 1px solid #ddd;
+      }
+
+      .block {
+        padding: 15px;
+      }
+
+      h3 {
+        font-size: 16px;
+        color: #333;
+      }
+
+      a {
+        text-decoration: none;
+        color: #2980b9;
+      }
+
+      button {
+        padding: 10px 20px;
+        margin: 10px;
+        color: white;
+        background: #2980b9;
+        border: none;
+        border-radius: 8px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+
+      .block-1, .block-3 {
+        width: 30%;
+        background: peachpuff;
+      }
+
+      .block-2 {
+        width: 40%;
+        background: white;
+      }
+
+      .block-4 {
+        width: 100%;
+        background: lightgreen;
+      }
+
+      .block_x, .block_y {
+        background: white;
+        border: 2px solid #2980b9;
+        padding: 5px;
+        text-align: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Header -->
+    <table class="header">
+      <tr>
+        <td>
+          <div class="block_x">
+            <h3>Будь-яка примха за ваші гроші</h3>
+          </div>
+        </td>
+      </tr>
+    </table>
+
+    <!-- Основний контент -->
+    <table class="content">
+      <tr>
+        <td class="block block-1">
+          <h3>Соціальні мережі</h3>
+          <ul style="list-style: none;">
+            <li>Facebook</li>
+            <li>Instagram</li>
+            <li>Telegram</li>
+          </ul>
+        </td>
+
+        <td class="block block-2">
+          <p>Заповніть форму нижче</p>
+          <label for="name">Ваше ім'я</label><br>
+          <input type="text" id="name" style="padding: 8px; margin-bottom: 10px;"><br>
+          <label for="email">Ваш email</label><br>
+          <input type="email" id="email" style="padding: 8px; margin-bottom: 10px;"><br>
+          <button type="submit">Надіслати</button>
+          <p>Або зв'яжіться з нами самостійно. Всі контакти на сторінці</p>
+        </td>
+
+        <td class="block block-3">
+          <h3>Контактні дані:</h3>
+          <ul style="list-style: none;">
+            <li>Телефон:+38 (073) 073-73-73</li>
+            <li>Email: info@travelagency.com</li>
+            <li>Адреса: м. Київ, вул. Туристична, 24</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="3" class="block block-4">
+          <h3>Графік роботи:</h3>
+          <p>Понеділок – П’ятниця: 09:00 – 18:00</p>
+          <p>Субота: 10:00 — 16:00</p>
+          <p>Неділя: Вихідний</p>
+        </td>
+      </tr>
+    </table>
+
+    <!-- Footer -->
+    <table class="footer">
+      <tr>
+        <td>
+          <div class="block_y">
+            <h3>Будь-яка примха за ваші гроші</h3>
+          </div>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
